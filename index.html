@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>NIGACHAD</title>
+
+<style>
+body {
+  background: #001100;
+  color: lime;
+  font-family: "Comic Sans MS", cursive;
+  text-align: center;
+  animation: bg 0.5s infinite alternate;
+}
+
+@keyframes bg {
+  from { background:#001100; }
+  to { background:#003300; }
+}
+
+h1 {
+  color: yellow;
+  font-size: 60px;
+  text-shadow: 3px 3px red;
+  animation: shake 0.3s infinite;
+}
+
+@keyframes shake {
+  0% {transform:translate(0)}
+  25% {transform:translate(2px,-2px)}
+  50% {transform:translate(-2px,2px)}
+  75% {transform:translate(2px,2px)}
+  100% {transform:translate(0)}
+}
+
+marquee {
+  font-size: 24px;
+  color: red;
+  font-weight: bold;
+}
+
+img {
+  width: 90%;
+  border: 5px solid yellow;
+  margin: 20px 0;
+  animation: spin 6s infinite linear;
+}
+
+@keyframes spin {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+.box {
+  border: 3px dashed yellow;
+  background: black;
+  padding: 10px;
+  margin: 20px;
+}
+
+.btn {
+  display: block;
+  background: red;
+  color: white;
+  padding: 20px;
+  margin: 20px auto;
+  width: 300px;
+  font-size: 20px;
+  text-decoration: none;
+  animation: flash 0.7s infinite;
+}
+
+@keyframes flash {
+  0% {background:red;}
+  50% {background:yellow; color:black;}
+  100% {background:red;}
+}
+</style>
+</head>
+
+<body>
+
+<h1>NIGA CHAD</h1>
+
+<marquee>🚨 1000X INCOMING 🚨 EARLY HOLDERS ONLY 🚨 DO NOT MISS 🚨</marquee>
+
+<div class="box">
+<p>$NIGA LIVE PRICE: $0.008196 ▲▲▲</p>
+<p id="profit">YOUR PROFIT: $1612</p>
+</div>
+
+<!-- IMAGE ORDER -->
+<img src="images/zz4.jpg">
+<img src="images/zz2.png">
+<img src="images/zz6.gif">
+<img src="images/zz5.png">
+<img src="images/zz8.png">
+<img src="images/zz1.png">
+<img src="images/zz7.png">
+<img src="images/zz3.gif">
+
+<div class="box">
+<p>WELCOME EARLY INVESTOR</p>
+<p>BLACKCHAIN TECHNOLOGY</p>
+<p>INSTITUTIONAL LEVEL GAINS</p>
+</div>
+
+<div class="box">
+<p>🟢 WALLET CONNECTED</p>
+<p>🟢 USER BOUGHT $4,231</p>
+<p>🟢 NEXT LEG UP</p>
+</div>
+
+<a href="#" class="btn">CONNECT WALLET</a>
+<a href="#" class="btn">BUY NOW</a>
+
+<div class="box">
+<p>AS SEEN ON</p>
+<img src="images/google.png">
+<img src="images/ibm.png">
+</div>
+
+<script>
+let profit = 1612;
+setInterval(() => {
+  profit += Math.floor(Math.random()*50);
+  document.getElementById("profit").innerText =
+    "YOUR PROFIT: $" + profit;
+}, 1000);
+</script>
+
+</body>
+</html>
